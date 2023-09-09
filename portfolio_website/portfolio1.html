@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="portfolio1.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="mode-toggle"><a href="#" id="mode-toggle">Dark Mode</a></li>
+        </ul>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    </nav>
+
+    <section id="home" class="section">
+        <div class="content">
+            <div class="intro">
+                <h2>Introduction</h2>
+                <p>Hello! I'm Rohit Karmakar, a passionate and driven student currently
+                    in
+                    my second year at NHCE (New Horizon College of Engineering). I'm on a journey to explore the
+                    exciting world of web development and design. This portfolio is a showcase of my skills,
+                    experiences, and projects in this ever-evolving field.</p>
+                <p class="emphasis">As a budding web developer, I'm dedicated to creating elegant and user-friendly
+                    websites that leave a lasting impression. Whether it's crafting beautiful front-end interfaces or
+                    diving into the complexities of back-end development, I'm always eager to take on new challenges and
+                    expand my knowledge.</p>
+            </div>
+            <img src="myphoto.jpg" alt="Your Photo" class="profile-image">
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <br>
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Classification model to predict the gender (male or female) based on different acoustic parameters
+                </h3>
+                <p>A gender classification model leveraging acoustic parameters to predict whether a given voice sample
+                    belongs to a male or female speaker.
+                </p>
+
+            </div>
+            <br>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Automated Time Table Generator in C</h3>
+                <p>An automated time table generator implemented in C for efficient scheduling and organization of tasks
+                    or events.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <br>
+            <p>Download my resume to learn more about my qualifications and experience:</p>
+            <br>
+            <a href="resume_rohit.pdf" target="_blank" class="resume-download-link">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me for inquiries, collaborations, or just to say hello!</p>
+
+          
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+          
+            <div id="message-container"></div>
+        </div>
+
+    </section>
+
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
