@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp - Statuses</title>
+    <link rel="stylesheet" href="whatsapp.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .cover1 {
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border:5px dashed rgb(82, 175, 68) ;
+        }
+
+
+        .status {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .status-field {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            color: white;
+        }
+        .status-field:nth-child(1){
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            color:white;
+        }
+
+        .status1 {
+            display: flex;
+            gap: 10px;
+        }
+        .status1:hover{
+            cursor: pointer;
+            background:#353333 ;
+        }
+      
+        .left {
+            flex: 40%;
+            background: #2b2a2a;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .right {
+            flex: 60%;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            background: #353333;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .close-button ion-icon {
+            position: relative;
+            color: white;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="left">
+        <span class="close-button"><ion-icon name="arrow-back-outline"></ion-icon></span>
+        <div class="status">
+            <div class="status-field">
+                <img src="user9.jpeg" class="cover1">
+                <h4>My Status</h4>
+            </div>
+            <hr>
+
+            <div class="status-field">
+                <h4>Recent</h4>
+                <br>
+                <div class="status1">
+                    <img src="user1.jpeg" class="cover1">
+                    <h4>Aradhya</h4>
+                </div>
+                <br>
+                <div class="status1">
+                    <img src="user4.jpeg" class="cover1">
+                    <h4>Kedar</h4>
+                </div>
+
+
+            </div>
+            <hr>
+
+            <div class="status-field">
+                <h4>Viewed</h4>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="right">
+        <h4>Click on a contact to view their status updates</h4>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="whatsapp.js"></script>
+</body>
+
+</html>

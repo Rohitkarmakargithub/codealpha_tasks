@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="whatsapp.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+
+            <div class="header">
+                <img class="cover" src="user.jpeg">
+                <div class="nav_bar">
+                    <ion-icon name="scan-circle-outline" id="openStatuses"></ion-icon>
+                    <ion-icon name="add-circle-outline"></ion-icon>
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="new-group-section">
+                <span class="close-button"><ion-icon name="arrow-back-outline"></ion-icon></span>
+                <br>
+                <h2>Add Group participants</h2>
+                <input type="text" class="newgrpentry" placeholder="Type contact name">
+                <br>
+                <div class="participants-list">
+                    <label><input type="checkbox" class="participant-checkbox"> Aradhya</label>
+                    <label><input type="checkbox" class="participant-checkbox"> Arjun</label>
+                    <label><input type="checkbox" class="participant-checkbox"> Aman</label>
+                    <label><input type="checkbox" class="participant-checkbox"> kedar</label>
+                    <label><input type="checkbox" class="participant-checkbox"> khush</label>
+                    <label><input type="checkbox" class="participant-checkbox"> Shanaya</label>
+                    <label><input type="checkbox" class="participant-checkbox"> Sohail</label>
+                    <label><input type="checkbox" class="participant-checkbox"> Zeus</label>
+                </div>
+                
+            </div>
+
+            <div class="search_container">
+                <input type="text" class="search_bar" id="searchInput" placeholder="search or start a new chat">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+
+            <div class="chatlist">
+                <div class="block active">
+                    <img src="user9.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Saksham</h4>
+                            <p class="time">10:56 Am</p>
+                        </div>
+                        <div class="message_p">
+                            <p>ohh good
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <img src="user1.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Aradhya</h4>
+                            <p class="time">09:16 Am</p>
+                        </div>
+                        <div class="message_p">
+                            <p>hello!! how is it going.</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <img src="user2.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Arjun</h4>
+                            <p class="time">8:15 Am</p>
+                        </div>
+                        <div class="message_p">
+                            <p>it was nice to see you!!
+                            </p>
+                            <b>2</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <img src="user3.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Khush</h4>
+                            <p class="time">Monday</p>
+                        </div>
+                        <div class="message_p">
+                            <p>meet me the location
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <img src="user4.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Kedar</h4>
+                            <p class="time">Tuesday</p>
+                        </div>
+                        <div class="message_p">
+                            <p>ok
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <img src="user5.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Sohail</h4>
+                            <p class="time">Tuesday</p>
+                        </div>
+                        <div class="message_p">
+                            <p>bye!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <img src="user6.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Shanaya</h4>
+                            <p class="time">Tuesday</p>
+                        </div>
+                        <div class="message_p">
+                            <p>see you!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <img src="user7.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>zeus</h4>
+                            <p class="time">Tuesday</p>
+                        </div>
+                        <div class="message_p">
+                            <p>I have sent you the notes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <img src="user8.jpeg" class="cover1">
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Aman</h4>
+                            <p class="time">Tuesday</p>
+                        </div>
+                        <div class="message_p">
+                            <p>see you tomorrow!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="header">
+                <img class="cover" src="user9.jpeg">
+                <h4>Saksham<br>
+                    <p>online</p>
+                </h4>
+                <div class="nav_bar">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="chatbox">
+                <div class="message frd_message">
+                    <p>ohh good<br><span>12:15</span></p>
+                </div>
+            </div>
+
+            <div class="chatinput">
+                <ion-icon name="attach-outline"></ion-icon>
+                <input type="text" id="chat" placeholder="Type a message">
+                <ion-icon name="happy-outline"></ion-icon>
+                <ion-icon name="send-outline"></ion-icon>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="expandedImage">
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="whatsapp.js"></script>
+
+</body>
+
+</html>

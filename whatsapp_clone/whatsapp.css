@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    background:#fff;
+}
+.left{
+    flex:40%;
+    background:#fff;
+    border-right:1px solid rgba(0,0,0,0.2);
+}
+.header{
+    position:relative;
+    display:flex;
+    width:100%;
+    height:60px;
+    background:#f0f2f5;
+    justify-content: space-between;
+}
+.header h4{
+    position: relative;
+    right:260px;
+    top:5px;
+    font-size: 1.2em;
+}
+.header p{
+    line-height: 1.5em;
+    font-size: 0.7em;
+}
+.cover{
+    border-radius:50%;
+    margin:5px;
+    cursor:pointer;
+}
+
+.nav_bar{
+    display: flex;
+    align-items:center;
+    gap:5px;
+    justify-content:center;
+}
+.nav_bar ion-icon{
+   width:50px;
+   height: 50%; 
+   cursor:pointer;
+   color:#51585c;
+   font-size: 1.5rem;
+}
+.search_container{
+    display:flex;
+    width:100%;
+    height:60px;
+    background:white;
+    justify-content: center;
+    align-items: center;
+    border-bottom:0.1px solid rgba(97, 94, 94, 0.2);
+}
+
+.search_bar{
+    background:#f0f2f5;
+    width:100%;
+    height:40px;
+    outline:none;
+    border:none;
+    border-radius: 30px;
+    padding-left:40px;
+ 
+}
+.search_container ion-icon{
+    position: absolute;
+    left:20px;
+}
+.search_container ion-icon:hover{
+    cursor:pointer;
+}
+.chatlist{
+    display:flexbox;
+    position: relative;
+    height:475px;
+    overflow-y: auto;
+}
+
+.block{
+    position: relative;
+    width:100%;
+    display: flex; /* Added */
+    align-items: center; /* Center content vertically */
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.block.active{
+  background: #f0f2f5;
+}
+
+.block:hover{
+    background:#f5f5f5 ;
+    cursor: pointer;
+}
+
+.cover1{
+    width:47px;
+    height:47px;
+    border-radius: 50%;
+    margin-right: 10px; /* Added margin for spacing */
+}
+
+.details {
+    position: relative;
+    width:100%;
+}
+.listhead{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+.time{
+    font-size: 0.7em;
+}
+.block.unread .time{
+    color: #06d755;
+}
+.listhead h4 {
+   font-size:1em;
+}
+.message_p{
+    display: flex;
+    justify-content: space-between;
+}
+.message_p p{
+    display:flex;
+    width:350px;
+    font-size: 0.9em;
+    color:#3a3838;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+.message_p b{
+    display: flex;
+    background:#06d755;
+    color:white;
+    width:20px;
+    justify-content: center;
+    align-items: center;
+    font-size:0.7em;
+    border-radius: 50%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+   
+    flex:60%;
+    background:#e5ddd5;
+    
+}
+.right::before{
+    content:'';
+    position:absolute;
+    width:750px;
+    height:100%;
+    background:url('pattern.png');
+    opacity: 0.09;
+}
+.chatbox{
+ 
+    width:100%;
+    height:calc(100%-120px);
+    padding:50px;
+    flex-grow:1;
+    overflow-y:auto;
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
+    justify-content: flex-end; /* Add this */
+}
+.message{
+    position:relative;
+    display:flex;
+    width:100%;
+    margin: 5px 0;
+    align-self: flex-end; /* Add this */
+}
+.message p{
+    position:relative;
+    text-align:right;
+    max-width:65%;
+    background:#dcf8c6;
+    border-radius:10px;
+    padding:10px;
+    font-size: 0.9em;
+}
+.chatbox::-webkit-scrollbar {
+    display: none;
+}
+.frdmessage p::before{
+    content:'';
+    position:absolute;
+    right:-12px;
+    width:20px;
+    height:20px;
+    background: linear-gradient(135deg,#eaece4 0%,#dcf8c6 50%,transparent 50%,transparent);
+}
+.message p span{
+    font-size: 0.85em;
+}
+.my_message{
+  justify-content:flex-end;
+}
+.frd_message p{
+    background: #f5f5f5;
+    text-align:left;
+}
+
+.chatinput{
+    position: relative;
+    width:100%;
+    height:60px;
+    background: #f0f0f0;
+    padding: 15px;
+    display:flex;
+    justify-content: space-between;
+    bottom:0;
+    align-items: center;
+}
+
+.chatinput ion-icon{
+    cursor:pointer;
+    font-size: 1.8em;
+    color:#51585c;
+}
+.chatinput input{
+    position: relative;
+    width:90%;
+    font-size: 1em;
+    margin:0 15px;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 10px;
+}
+/* Add this to the end of your whatsapp.css file */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f1f1f1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.new-group-section {
+    display: none;
+  }
+  
+.new-group-section.active {
+    display: block;
+    background:#f0f2f5;
+    width:100%;
+    height:100%;
+    outline:none;
+    border:none;
+    border-radius: 30px;
+    padding-left:40px;
+    overflow-y: auto;
+}
+
+.search_container.active{
+    display:none;
+}
+.chatlist.active{
+    display:none;
+}
+.newgrpentry{
+    width:400px;
+    height:40px;
+    border:none;
+    border-radius: 30px;
+    padding-left:40px;
+}
+.participants-list{
+    display:flex;
+    flex-direction: column;
+}
+.participants-list label{
+    display:block;
+    font-size:2.2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.participants-list label:hover{
+    background:#f5f5f5 ;
+    cursor: pointer;
+}
+.close-button ion-icon{
+    position: relative;
+    right:20px;
+    width:30px;
+    height:30px;
+}
+.emoji-picker {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 150px;
+    overflow-y: visible;
+    z-index: 1000;
+}
+
+.emoji-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.emoji-button:focus {
+    outline: none;
+}
