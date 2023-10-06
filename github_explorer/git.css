@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background-color: #333; /* Set a dark background color */
+    background-color: #333;
     overflow: auto;
 }
 
@@ -38,7 +38,7 @@ body {
 .navbar-brand:hover {
     transform: translateY(-3px);
     color: #ff7f50;
-    /* Change color on hover */
+
 }
 
 .nav_side {
@@ -71,12 +71,9 @@ ul {
 
 .card.text-bg-dark {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* This adds a subtle box shadow */
-
     border: 1px solid #ccc;
-    /* This adds a border */
     border-radius: 10px;
-    /* This rounds the corners of the card */
+
 }
 
 .card-t {
@@ -117,8 +114,8 @@ ul {
 }
 
 #repoContainer {
-    margin-top: 420px; /* Adjust this value to control the space between the card and repositories */
-    display: none; /* Initially hide the container */
+    margin-top: 420px; 
+    display: none; 
     background-color: #282828 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
