@@ -1,0 +1,170 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #333; /* Set a dark background color */
+    overflow: auto;
+}
+
+#link {
+    gap: 30px;
+}
+
+.form-control {
+    margin-left: 100px !important;
+}
+
+.nav-link {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: translateY(-3px);
+    color: #ff7f50 !important;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-3px);
+    color: #ff7f50;
+    /* Change color on hover */
+}
+
+.nav_side {
+    position: relative;
+    top: 60px;
+    background-color: rgb(37, 39, 39);
+    width: 200px;
+    height: 100vh;
+    border-right: 2px solid black;
+    flex-basis: 20%;
+    overflow-y: visible;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.lists {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    left: 30%;
+    top: 20%;
+
+}
+
+.card.text-bg-dark {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* This adds a subtle box shadow */
+
+    border: 1px solid #ccc;
+    /* This adds a border */
+    border-radius: 10px;
+    /* This rounds the corners of the card */
+}
+
+.card-t {
+    line-height: 3px;
+}
+
+@keyframes glow {
+    0% {
+        color: #FF5733;
+    }
+
+    50% {
+        color: #FFC300;
+    }
+
+    100% {
+        color: #FF5733;
+    }
+}
+
+.count-style {
+    animation: glow 1.5s infinite;
+}
+
+.card-title {
+    color: yellow !important;
+}
+
+.content{
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#repoContainer {
+    margin-top: 420px; /* Adjust this value to control the space between the card and repositories */
+    display: none; /* Initially hide the container */
+    background-color: #282828 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+
+h3{
+    padding: 10px;
+    text-align:center;
+    color:yellow;
+}
+#repoRow{
+    color: #00ff00;
+    padding-left: 30px;
+    text-align:left
+}
+.card{
+    background-color: #282828 !important;
+}
+.text-style{
+    color:#fff;
+}
+
+
+.fade-in-animation {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.top-3-container{
+    position: relative;
+    top:350px;
+    padding:10px 20px;
+    background-color: #282828;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 540px;
+}
+.repo-name{
+    text-transform: capitalize;
+    color: #7DF9FF;
+}
+.repo-desc{
+    color:#51ff0d;
+}
